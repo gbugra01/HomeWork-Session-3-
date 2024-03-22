@@ -1,14 +1,13 @@
-package Utilities;
+package utilities;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
     public static Properties properties;
     static {
-        String fileRoad="configuraiton.properties";
+        String fileRoad="configuration.properties";
         try {
             FileInputStream fileInputStream=new FileInputStream(fileRoad);
             properties=new Properties();
